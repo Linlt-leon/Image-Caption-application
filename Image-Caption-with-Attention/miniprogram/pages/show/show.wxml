@@ -1,0 +1,49 @@
+<!-- <view>{{result}}</view>
+<view>{{result_chi}}</view>
+<image class="img" src="{{photos}}" mode="aspectFit"></image> -->
+
+<view class="main">
+
+  <view class="module1">
+      <image class="img" src="{{photos}}" mode="aspectFit"></image>
+  </view>
+
+
+  <view class="module2">
+    <view class="module2_title">
+      <!-- <view class="title_item active">英文</view>
+      <view class="title_item">中文</view> -->
+      <view
+      wx:for="{{tabs}}"
+      wx:key="id"
+      class="title_item {{item.isActive?'active':''}}"
+      bindtap="handleItemTap"
+      data-index="{{index}}"
+      >
+        {{item.name}}
+      </view>
+    </view>
+    <view class="module2_caption">
+      <view class="english_caption" wx:if="{{tabs[0].isActive}}">{{result}}</view>
+      <view class="chinese-caption" wx:if="{{tabs[1].isActive}}">{{result_chi}}</view>
+      <view class="chinese-caption" wx:if="{{tabs[2].isActive}}">{{result_chi2}}</view>
+    </view>
+  </view>
+
+  <view class="module3">
+    <view class="module3_item">
+      <!-- <button class="share" bindtap="handleShare" open-type='share'>  分 享  </button> -->
+      <button class="share" open-type="getUserInfo" bindgetuserinfo="getUserInfo" >分享</button>
+      <share-box isCanDraw="{{isCanDraw}}" imgPath="{{photos}}" result="{{result}}" result_chi="{{result_chi}}" bind:initData="createShareImage" bind:close="handleClose" />
+    </view>
+    <view class="module3_item">
+      <navigator open-type="reLaunch" url="/pages/index/index"> 
+        <button class="onemore">  再来一张  </button>
+      </navigator>
+    </view>
+  </view>
+
+</view>
+
+
+

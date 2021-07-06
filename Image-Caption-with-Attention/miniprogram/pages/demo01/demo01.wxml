@@ -1,0 +1,33 @@
+
+<view class="module1">
+  <form bindsubmit="uploadImg">
+    <view class="choose" bindtap="chooseImg">点击选择图片</view>
+    <image class="img" src="{{photos}}" mode="aspectFit"></image>
+    <button class="submit" form-type="submit">提交</button>
+  </form>
+</view>
+
+<text>\n</text>
+
+<view class="module2">
+  <view class="module2_annotation"> CAPTION: </view>
+
+  <view class="module2_title">
+    <!-- <view class="title_item active">英文</view>
+    <view class="title_item">中文</view> -->
+    <view
+    wx:for="{{tabs}}"
+    wx:key="id"
+    class="title_item {{item.isActive?'active':''}}"
+    bindtap="handleItemTap"
+    data-index="{{index}}"
+    >
+      {{item.name}}
+    </view>
+  </view>
+  <view class="module2_caption">
+    <view class="english_caption" wx:if="{{tabs[0].isActive}}">{{result}}</view>
+    <view class="chinese-caption" wx:if="{{tabs[1].isActive}}">{{result_chi}}</view>
+  </view>
+</view>
+

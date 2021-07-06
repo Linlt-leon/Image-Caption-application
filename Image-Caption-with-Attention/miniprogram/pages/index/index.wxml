@@ -1,0 +1,4 @@
+<view class='parent-bg'> </view>
+<view class='module1'>
+  <button class="submit" bindtap="chooseImg">选 择 图 片</button>
+</view> 

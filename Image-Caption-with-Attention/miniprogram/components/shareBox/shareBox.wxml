@@ -1,0 +1,12 @@
+
+<!-- 海报 -->
+<view class="share-wrap {{visible ? 'active' : ''}}" catchtouchmove="preventDefault">
+  <view class="share-back {{visible ? 'active' : ''}}"></view>
+  <view class="share-container {{visible ? 'active' : ''}}">
+    <view class="close" bindtap="handleClose"></view>
+    <image mode="widthFix" src="{{sharePath}}" class="share-image" />
+    <view class="share-tips">保存图片，快叫伙伴们一起来试试吧</view>
+    <view class="save-btn" bindtap="handleSavePhoto"></view>
+  </view>
+</view>
+<painter style="position: absolute; top: -9999rpx;" palette="{{imgDraw}}" bind:imgOK="onImgOK" />

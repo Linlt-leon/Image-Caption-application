@@ -1,0 +1,127 @@
+page{
+  height:100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-image: url('https://z3.ax1x.com/2021/06/28/RNPLPP.jpg') 
+}
+
+.main{
+  display: flex;
+  width: 100%;
+  height: 100%; 
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.module1{
+  display: flex;
+  width: 100%;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.img{
+  margin: 20rpx 20rpx;
+  border: 16rpx solid #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+
+.module2{
+  display: flex;
+  width: 100%;
+  height: 20%;
+  justify-content: flex-start;  
+  flex-direction: column;
+}
+
+.module2_title{
+  display: flex;
+  font-size:18px;     
+  font-weight:bold; 
+  font-family: "微软雅黑";
+  margin: 20rpx;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.title_item{
+  display: flex;
+  width: 200rpx;
+  height: 60rpx;
+  justify-content: center;
+  align-items: center;
+  background: #ffcb3d ;
+  color: #fff;
+  border-radius: 45rpx;
+
+}
+.active{ 
+  box-shadow:0rpx 10rpx 50rpx 10rpx rgba(255,203,61,0.30);
+}
+
+.module2_caption{
+  font-family: '微软雅黑';
+  font-size:20px;  
+  font-weight:900;    
+  text-shadow:1.8px 0 0px #353535, -1.8px 0 0px #353535, 0 1.8px #353535, 0 -1.8px #353535, 1.8px 1.8px #353535, -1.8px -1.8px #353535, 1.8px -1.8px #353535, -1.8px 1.8px #353535;
+  margin: 40rpx;
+  color:#f6efaa;
+  -webkit-text-stroke: 0.6px #f6efaa;
+}
+/* .english_caption{
+  font-family: 'Times New Roman', Times, serif;
+}
+.chinese_caption{
+  font-family: '宋体';
+} */
+
+.module3{
+  display: flex;
+  margin: 50rpx;
+  width: 100%;
+  height: 30%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; 
+}
+
+.module3_item{
+  display: flex;
+  width: 400rpx;
+  height: 88rpx;
+  margin: 20rpx;
+  align-items: center;
+  justify-content: center; 
+}
+
+.share{
+  font-size:20px; 
+  font-family: "微软雅黑";
+  color: #fff;
+  border-radius: 45rpx;
+  text-shadow:1px 1px #aaa;
+  box-shadow:0rpx 10rpx 50rpx 10rpx rgba(255,203,61,0.30);
+  /* background: radial-gradient(circle, #ffe082, #ffca28, #ffb300); */
+  background: rgba(255,203,61,0.80);
+}
+
+.onemore{
+  font-size:20px; 
+  font-family: "微软雅黑";
+  color: #fff;
+  border-radius: 45rpx;
+  text-shadow:1px 1px #aaa;
+  box-shadow:0rpx 10rpx 50rpx 10rpx rgba(255,203,61,0.30);
+  /* background: linear-gradient(to right, #ffd94b, #ffcb3d ,#f0be2e); */
+  background: rgba(255,203,61,0.80);
+}
+
+
+
+
+

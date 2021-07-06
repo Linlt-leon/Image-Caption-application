@@ -1,0 +1,8 @@
+<view class="cu-bar margin-top bg-white">
+  <view class="action">
+    <text class="cuIcon-title text-green"></text>开启语音模式
+  </view>
+  <view class="action">
+    <switch checked="{{switch1Checked}}" bindchange="switch1Change"/>
+  </view>
+</view>

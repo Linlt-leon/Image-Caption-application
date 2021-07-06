@@ -1,0 +1,8 @@
+<view class="theme">
+  <view class="img" bindtap="coverontTap">
+    <image mode="widthFix" lazy-load src="https://z3.ax1x.com/2021/06/25/R1vwz6.png" />
+  </view>
+  <!-- <view class="title" bindtap="coverontTap">
+    IMAGE CAPTION 
+  </view> -->
+</view>
