@@ -36,8 +36,9 @@ python eval.py -b=5
 | 5 | 0.3270 |
 
 ## Flask框架部署 后端部分
-
+  `caption_flask.py`
 ## 微信小程序 前端部分
+  参考miniprogram部分代码
 
 ## 参考
 https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning
