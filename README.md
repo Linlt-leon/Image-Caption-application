@@ -1,7 +1,7 @@
 # Image-Caption-Application
 ## 介绍
   Image Caption是一个综合而具有挑战性的工作，我们基于实践课上所学知识的想法，选择了encoder-decoder加上attention机制的方式，分别使用 COCO 2014 英文caption数据集和 AI Challenger 2017 的中文caption数据集，基于PyTorch，复现并训练出了Kelvin Xu等人的论文[ Show, Attend, and Tell ](https://arxiv.org/abs/1502.03044)里的模型，然后将其部署在服务器上，并开发了配套的小程序作为一个image caption的应用，实现了不错的相应速度和结果。
-  ![Model](img/模型图.png)
+  ![Model](img/模型图.png=100x100)
 
 ## MODEL 模型部分
 ### 数据预处理
