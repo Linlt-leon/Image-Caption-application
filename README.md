@@ -40,9 +40,15 @@ python eval.py -b=5
 | 5 | 0.3270 |
 
 ## Flask框架部署 后端部分
-  `caption_flask.py`
+  为了使得前端微信小程序能够调用训练好的深度学习模型，我们团队使用Flask框架来完成对服务器中Python应用的部署。Flask是一个轻量级的Python Web开发框架，它自带了一个轻型服务器，可以通过序列化和反序列化操作将我们的模型加载。这样，微信小程序可以通过HTTP连接发送请求(request)到Flask上，Flask解析接收到的数据，传递给加载好的Pytorch模型，模型运行返回预测结果给Flask，Flask再通过HTTP连接返回结果(response)给微信小程序。具体代码查看`caption_flask.py`文件。
+  <div  align="center">    
+    <img src="img/Flask原理.png" width = "640" alt="Flask原理图" align=center />
+  </div>
 ## 微信小程序 前端部分
-  参考`miniprogram`部分代码
+  我们团队自己开发了一个简易的微信小程序，一方面可以较好地展示我们的模型效果，另一方面是为了给大众提供一个能方便使用的Image Caption应用，因为市面上可用的Image Caption API几乎搜索不到。
+我们的微信小程序具备以下基本功能：点击按钮选择上传照片或拍照，再点击提交图片，程序便会立即分别返回英文和中文的caption结果。（贴示例图）
+	同时，为了展示Image Caption在实际应用中的意义，我们还在我们的小程序中开发了以下进阶功能：（1）社交图片分享功能：点击分享按钮，即可将用户提交的图片与模型生成的caption一同分享到朋友圈或分享给好友。（2）无障碍读图功能：在设置中开启“朗读“功能，即可在返回caption的同时通过音频方式朗读我们的caption内容，使得用户能够通过听觉来感知图片内容。该项功能实际上是模拟了帮助视觉障碍人士阅读图片或感知眼前视野。
+  具体参考我们自己的写的`miniprogram`文件代码。
 
 ## 参考
 https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning
